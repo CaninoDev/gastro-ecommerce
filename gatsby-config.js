@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Gastrorant`,
+    description: `A Gatsby template for restaurants using Stripe for payment processing `,
+    author: `@CaninoDev`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -25,6 +25,15 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-source-stripe`,
+      options: {
+        objects: ["Product", "Price"],
+        secretKey: process.env.STRIPE_SECRET_KEY,
+        downloadFiles: true,
+        auth: false,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

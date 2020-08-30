@@ -1,10 +1,11 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gastro-template",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A Gatsby template for restaurants using Stripe for payment processing ",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Ian C <ian@thecommittedbug.io>",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "gatsby": "^2.24.47",
     "gatsby-image": "^2.4.16",
     "gatsby-plugin-manifest": "^2.4.23",
@@ -12,11 +13,13 @@
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-sharp": "^2.6.27",
     "gatsby-source-filesystem": "^2.3.24",
+    "gatsby-source-stripe": "^3.1.1",
     "gatsby-transformer-sharp": "^2.5.13",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "stripe": "^8.89.0"
   },
   "devDependencies": {
     "prettier": "2.0.5"
@@ -36,9 +39,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/CaninoDev/restaurant-stripe-template"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/CaninoDev/restaurant-stripe-template/issues"
   }
 }

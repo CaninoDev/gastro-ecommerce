@@ -1,0 +1,16 @@
+# The following redirect is intended for use with most SPAs that handle routing intnernally
+[[redirects]]
+    from = "/*"
+    to = "/index.html"
+    status = 200
+
+# Define the default headers
+[[headers]]
+    # Define which paths this block will cover
+    for = "/*"
+        [headers.values]
+        Access-Control-Allow-Origin = "*"
+
+# Define where netlify functions are stored
+[build]
+    functions = "./src/functions/"
