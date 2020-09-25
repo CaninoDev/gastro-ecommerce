@@ -14,14 +14,16 @@ module.exports.handler = async (event, context, callback) => {
       updatedObject = await stripe.products.update(id, { ...object })
     }
 
-    callback(null, {
+    const response = {
       statusCode: 201,
       headers: {
         "Access-Control-Allow-Origin": "*",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ updatedObject }),
-    })
+    }
+
+    callback(null, response)
   } catch (error) {
     callback(error.message)
   }
