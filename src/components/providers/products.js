@@ -16,7 +16,7 @@ const ProductsProvider = ({ children }) => {
  */
 const Provider = ({ data, children }) => {
   const initialEntries = normalizeData(data.allStripePrice.nodes)
-  const [products, setProducts] = useState(initialEntries)
+  const [ products, setProducts ] = useState(initialEntries)
 
   useEffect(() => {
     updateProducts()
@@ -57,7 +57,7 @@ const normalizeData = data => {
       price: node.unit_amount,
       active: node.active,
     }
-    products[product.id] = aProduct
+    products[ product.id ] = aProduct
   })
   return products
 }
