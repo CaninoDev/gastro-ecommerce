@@ -30,7 +30,7 @@
     "prettier": "2.0.5"
   },
   "keywords": [
-    "gatsby"
+    "gatsby", "netlify", "stripe", "e-commerce", "restaurant"
   ],
   "license": "0BSD",
   "scripts": {

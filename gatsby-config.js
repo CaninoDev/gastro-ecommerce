@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Gastrorant`,
+    title: `Tribeca Grill`,
     description: `A Gatsby template for restaurants using Stripe for payment processing `,
     author: `@CaninoDev`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-layout`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
