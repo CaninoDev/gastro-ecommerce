@@ -1,5 +1,5 @@
-import React, { createContext, useState, useEffect } from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import React, { createContext, useEffect, useState } from "react"
 
 export const ProductsContext = createContext()
 
@@ -16,7 +16,7 @@ const ProductsProvider = ({ children }) => {
  */
 const Provider = ({ data, children }) => {
   const initialEntries = normalizeData(data.allStripePrice.nodes)
-  const [ products, setProducts ] = useState(initialEntries)
+  const [products, setProducts] = useState(initialEntries)
 
   useEffect(() => {
     updateProducts()
@@ -53,11 +53,12 @@ const normalizeData = data => {
       id: product.id,
       name: product.name,
       description: product.description,
+      type: product.metadata.type,
       price_id: node.id,
       price: node.unit_amount,
       active: node.active,
     }
-    products[ product.id ] = aProduct
+    products[product.id] = aProduct
   })
   return products
 }
@@ -71,10 +72,14 @@ export const productsQuery = graphql`
         id
         unit_amount
         product {
+          active
           description
           id
           images
           name
+          metadata {
+            type
+          }
         }
       }
     }
