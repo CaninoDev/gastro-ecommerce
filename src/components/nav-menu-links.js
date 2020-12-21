@@ -7,8 +7,7 @@ const Links = [
   { label: "Reservations", to: "#reservations" },
 ]
 
-const NavMenuLinks = ({ location }) => {
-  console.log(location.pathname)
+const NavMenuLinks = () => {
   return (
     <ul>
       {Links.map(l => (
@@ -18,12 +17,7 @@ const NavMenuLinks = ({ location }) => {
           }
           key={l.label}
         >
-          <a
-            href={l.to}
-            className={
-              location.pathname.includes(l.to) ? "nav-link active" : "nav-link"
-            }
-          >
+          <a href={l.to} className={"nav-link"}>
             {l.label}
           </a>
         </li>

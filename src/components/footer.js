@@ -46,14 +46,15 @@ const Footer = () => {
                   <i className="bx bx-chevron-right"></i> <a href="#">Home</a>
                 </li>
                 <li>
-                  <i className="bx bx-chevron-right"></i>{" "}
+                  <i className="bx bx-chevron-right"></i>
                   <a href="#">About us</a>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i> <a href="#">Menu</a>
                 </li>
                 <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Directions</a>
+                  <i className="bx bx-chevron-right"></i>
+                  <a href="#">Directions</a>
                 </li>
               </ul>
             </div>

@@ -4,6 +4,7 @@ import MenuItem from "./menu-item"
 
 const Menu = () => {
   const products = useContext(ProductsContext)
+
   const [menu, setMenu] = useState(products.listProducts())
   const filtersDefault = (function () {
     var types = ""
@@ -73,6 +74,7 @@ const Menu = () => {
               {menu.map(({ id, name, price, description }) => (
                 <MenuItem
                   id={id}
+                  key={id}
                   name={name}
                   price={price}
                   description={description}
