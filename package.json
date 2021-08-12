@@ -1,6 +1,6 @@
 {
-  "name": "gastro-template",
-  "private": true,
+  "name": "gastro-frontend",
+  "private": false,
   "description": "A Gatsby template for restaurants using Stripe for payment processing ",
   "version": "0.1.0",
   "author": "Ian C <ian@thecommittedbug.io>",
@@ -47,7 +47,7 @@
     "e-commerce",
     "restaurant"
   ],
-  "license": "0BSD",
+  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
