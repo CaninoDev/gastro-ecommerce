@@ -1,6 +1,10 @@
 # Gastro Template 
 
-A starter to create manage a storefront with [Gatsby](https://gatsbyjs.org/), [Stripe](https://stripe.com/), & [Netlify Functions](https://www.netlify.com/docs/functions/); includes cart, checkout, admin, and live data.
+A starter to create manage a storefront with [Gatsby](https://gatsbyjs.org/), [Stripe](https://stripe.com/), & [Netlify Functions](https://www.netlify.com/docs/functions/); includes cart, checkout, admin, and live data. 
+
+## Screenshot 
+
+<img src="assets/Screenshot.png" width="60%"></img>
 
 ## Features
 
